@@ -9,7 +9,7 @@ const text = {
 (async () => {
   let connection
   try {
-    connection = await amqp.connect("amqp://admin:1qaz2wsx@localhost:5672");
+    connection = await amqp.connect("amqp://admin:1qaz2wsx@localhost:5672")
     const channel = await connection.createChannel();
 
     await channel.assertQueue(queue)

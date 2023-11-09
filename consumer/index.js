@@ -27,8 +27,8 @@ import amqp from "amqplib"
       { noAck: true }
     );
 
-    console.log(" [*] Waiting for messages. To exit press CTRL+C");
+    console.log(" [*] Waiting for messages. To exit press CTRL+C")
   } catch (err) {
-    console.warn(err);
+    console.warn(err)
   }
 })();
